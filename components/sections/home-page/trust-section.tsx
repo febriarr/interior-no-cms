@@ -23,7 +23,7 @@ const featureSection: CardProps[] = [
   {
     title: "Easy Shopping",
     description:
-      "Get your luxury Get your luxury furniture delivered quickly and safely, right to your doorstep quickly and safely, right to your doorstep.",
+      "Get your luxury Get your luxury furniture delivered quickly and safely, right to your doorstep.",
     icon: HandbagSimpleIcon,
   },
   {
@@ -40,23 +40,23 @@ const featureSection: CardProps[] = [
   },
 ]
 
-export default function TestimoniSection() {
+export default function TrustSection() {
   return (
-    <section className="flex min-h-screen w-full flex-col gap-12 px-6 py-24 lg:gap-24">
+    <section className="flex min-h-screen w-full flex-col gap-12 bg-stone-950 px-6 py-24 text-stone-50 lg:gap-24">
       <div className="grid flex-1 gap-6 lg:grid-cols-2">
         {/* Left */}
-        <div className="flex flex-col gap-12 py-6">
+        <div className="flex flex-col justify-between gap-12 py-6">
           {/* header */}
           <div className="w-full max-w-lg space-y-6">
             <h3 className="text-4xl font-semibold text-pretty md:text-5xl">
-              Why Customers Choose Furnispace
+              Why Customers Choose Us
             </h3>
             <p className="text-muted-foreground">
               experience the perfect blend of luxury, quality, and design in
               every piece.
             </p>
           </div>
-          <div className="mt-auto grid flex-1 grid-cols-2 items-end gap-6">
+          <div className="mt-auto grid flex-1 gap-16 md:grid-cols-2">
             {featureSection.map((item) => (
               <Card
                 key={item.title}
@@ -68,7 +68,7 @@ export default function TestimoniSection() {
           </div>
         </div>
         {/* Image */}
-        <div className="group relative aspect-4/5 overflow-hidden rounded-xl lg:aspect-auto">
+        <div className="group relative aspect-video overflow-hidden rounded-xl lg:aspect-auto">
           <Image
             src="/about-image-2.jpg"
             alt="Modern interior"

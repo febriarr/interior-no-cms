@@ -23,8 +23,8 @@ export default function AboutSection() {
       {/* Content */}
       <div className="grid gap-6 lg:grid-cols-2">
         {/* Left */}
-        <div className="grid gap-6 sm:grid-cols-2">
-          <div className="flex rounded-xl bg-muted p-6 sm:col-span-2">
+        <div className="flex flex-col gap-6">
+          <div className="flex aspect-video items-end rounded-xl bg-muted p-6">
             <div className="space-y-3">
               <h4 className="text-xl font-semibold">Design With Intention</h4>
 
@@ -35,25 +35,27 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="group relative aspect-4/5 overflow-hidden rounded-xl">
-            <Image
-              src="/about-image-1.jpg"
-              alt="Interior design"
-              fill
-              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-          </div>
+          <div className="grid flex-1 gap-6 md:grid-cols-2">
+            <div className="group relative aspect-4/5 overflow-hidden rounded-xl">
+              <Image
+                src="/about-image-1.jpg"
+                alt="Interior design"
+                fill
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+            </div>
 
-          <div className="flex items-end rounded-xl bg-muted p-6">
-            <div className="space-y-3">
-              <h4 className="text-xl font-semibold">
-                Spaces That Feel Personal
-              </h4>
+            <div className="flex items-end rounded-xl bg-muted p-6">
+              <div className="space-y-3">
+                <h4 className="text-xl font-semibold">
+                  Spaces That Feel Personal
+                </h4>
 
-              <p className="text-muted-foreground">
-                Every project is guided by practical design thinking and a
-                commitment to delivering calm, grounded spaces.
-              </p>
+                <p className="text-muted-foreground">
+                  Every project is guided by practical design thinking and a
+                  commitment to delivering calm, grounded spaces.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -13,16 +13,16 @@ const navlinks: Navlinks[] = [
     href: "/",
   },
   {
+    label: "Collections",
+    href: "/collections",
+  },
+  {
     label: "About",
     href: "/about",
   },
   {
     label: "Contact",
     href: "/contact",
-  },
-  {
-    label: "Projects",
-    href: "/projects",
   },
 ]
 
@@ -33,7 +33,7 @@ export default function Navbar() {
         <BuildingsIcon size={24} weight="bold" />
         <span className="text-xl font-semibold">Furnispace</span>
       </div>
-      <nav>
+      <nav className="hidden lg:block">
         <ol className="flex items-center gap-6">
           {navlinks.map((item) => (
             <li key={item.label}>
