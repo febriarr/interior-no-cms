@@ -32,7 +32,7 @@ export default function Footer() {
         {/* Big Brand */}
 
         <div className="overflow-hidden">
-          <h2 className="text-center font-heading text-5xl leading-none font-bold tracking-[0.02em] uppercase sm:text-8xl md:text-8xl lg:text-[clamp(8rem,21vw,15.5rem)]">
+          <h2 className="text-center font-heading text-5xl leading-none font-bold tracking-[0.02em] uppercase sm:text-8xl md:text-8xl lg:text-[clamp(6.5rem,14vw,13rem)] xl:text-[clamp(7rem,15vw,14rem)] 2xl:text-[clamp(8rem,21vw,15.5rem)]">
             Furnispace
           </h2>
         </div>
